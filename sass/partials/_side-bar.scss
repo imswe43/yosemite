@@ -1,0 +1,133 @@
+.side-bar{
+  overflow:hidden;
+  width:202px;
+  float: left;
+  height:100%;
+  .compose-button{
+    padding:9px 54px 10px 52px;
+    font-size: 12px;
+    border-radius: 2px;
+    background-color: $blue;
+    color:white;
+    margin-left: 19px;
+    margin-top: 21px;
+    outline:none;
+    cursor: pointer;
+  }
+  .side-bar-main-nav{
+    .side-bar-main-nav-list{
+        margin-top: 27px;
+      li{
+          margin:{
+            bottom: 17px;
+            left:25px;
+          }
+          &:hover svg{
+            color: $highlighted-gray;
+          }
+          &:hover a{
+            color: $highlighted-gray;
+          }
+
+          &:first-child a{
+            color: $highlighted-gray;
+          }
+
+          .fa-share-square,.fa-star,.fa-align-justify,.fa-trash-alt{
+            margin-right: 11px;
+            color:$light-gray;
+          }
+          .fa-inbox{
+            margin-right: 11px;
+            color: $highlighted-gray;
+          }
+          a{
+            font-size: 14px;
+            color: $light-gray;
+          }
+        }
+      }
+    }
+    .side-bar-mail-groups{
+      margin-top:20px;
+      .side-bar-mail-groups-list{
+        cursor:pointer;
+        li{
+          padding:14px 0px 14px 29px;
+          &:hover{
+            background-color: $white-opacity;
+          }
+          &:hover a{
+            color: $highlighted-gray;
+          }
+
+          .square{
+            border-radius: 1px;
+            width:8px;
+            height:8px;
+            display: inline-block;
+          }
+        }
+        li:first-child{
+          .square{
+            border:3px solid $mail-group-violet;
+          }
+        }
+        li:nth-child(2){
+          .square{
+            border:3px solid $mail-group-orange;
+          }
+          .fa-angle-down{
+            width:12px;
+            height:12px;
+            background-color: $highlighted-gray;
+            color: $white;
+            margin-left:82px;
+            padding:0px 2px 0px 3px;
+            border-radius: 2px;
+          }
+        }
+        li:nth-child(3){
+          .square{
+            border:3px solid $mail-group-yellow;
+          }
+        }
+        li:nth-child(4){
+          .square{
+            border:3px solid $mail-group-blue;
+          }
+        }
+        li:nth-child(5){
+          .square{
+            border:3px solid $mail-group-gray;
+          }
+        }
+        a{
+          font-size: 14px;
+          margin-left:13px;
+          color:$light-gray;
+        }
+
+      }
+    }
+    .side-bar-foot{
+      position: fixed;
+      bottom: 0px;
+      margin-top: 228px;
+      .side-bar-foot-list{
+        display:flex;
+        justify-content: space-around;
+        background-color: $footer-background;
+        color:$light-gray;
+        li{
+          &:hover{
+            background-color: $highlighted-gray;
+          }
+          padding:22px 42px;
+          &:first-child{
+            border-right: 1px solid $footer-border;
+          }
+        }
+      }
+    }
+}

@@ -1,0 +1,148 @@
+.mail-single-content{
+  float:right;
+  clear:right;
+  width:554px;
+
+  .mail-single-content-head-layout{
+    margin:38px 30px;
+    width:498px;
+    border-bottom: 2px solid $lighter-blue-gray;
+    th{
+      position: relative;
+      padding-bottom: 37px;
+      vertical-align: top;
+
+      .square{
+        border-radius: 1px;
+        width:8px;
+        height:8px;
+        border:3px solid $mail-group-violet;
+        position:absolute;
+        top: 0;
+        right:14px;
+      }
+
+      &:nth-child(3){
+          vertical-align: middle;
+        .mail-shortcuts{
+          cursor: pointer;
+          display: table;
+          color: $light-gray;
+          span{
+            display: table-cell;
+            font-size: 19px;
+            border:1px solid $white-opacity;
+            padding:8px 14px;
+          }
+          span:first-child{
+            border-top-left-radius:25px;
+            border-bottom-left-radius: 25px;
+            border-right: 1px solid $white-opacity;
+            &:hover{
+              background-color: $blue;
+            }
+          }
+          span:nth-child(2){
+            border-top:1px solid $white-opacity;
+            border-bottom: 1px solid $white-opacity;
+            border-right:1px solid $white-opacity;
+            border-left:0;
+            &:hover{
+              background-color: $blue;
+            }
+          }
+          span:nth-child(3){
+            border-left:0;
+            &:hover{
+              background-color: $blue;
+            }
+          }
+          span:nth-child(4){
+            border-top-right-radius:25px;
+            border-bottom-right-radius: 25px;
+            &:hover{
+              background-color: $blue;
+            }
+          }
+        }
+      }
+      h2{
+        font-size:18px;
+        color: $highlighted-gray;
+        margin-left: 18px;
+      }
+      .dropdown{
+
+      color: $blue-gray;
+      float: left;
+      overflow: hidden;
+      margin-left: 18px;
+      .dropbtn{
+        cursor: pointer;
+        font-size: 12px;
+        display: inline-block;
+        padding: 4px 6px 7px 12px;
+        border-radius: 11.5px;
+        color: $blue-gray;
+        outline: none;
+      }
+
+      .dropdown-content{
+          display: none;
+          position: absolute;
+          background-color: $white;
+          min-width: 360px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+            a{
+              span{
+                color:$blue-gray;
+              }
+              text:{
+                decoration: none;
+                align: left;
+              }
+                float: none;
+                color: $highlighted-gray;
+                padding: 4px 6px 7px 12px;
+                display: block;
+              &:hover  {
+                background-color:$white-opacity ;
+              }
+            }
+
+        }
+        .dropdown-content-ja{
+              display: block;
+          }
+      }
+    }
+}
+.mail-single-content-layout{
+    width:532px;
+    height:534px;
+    overflow: auto;
+    margin:{
+      top:26px;
+      right:10px;
+      left:20px;
+      }
+        p{
+          color:$mail-content-gray;
+          font-size: 14px;
+          margin-bottom: 14px;
+        }
+        .bottom_fade{
+          position: fixed;
+          width:554px;
+          left: 720px;
+          height: 200px;
+          bottom: 0;
+          background: linear-gradient(transparent, $white);
+        }
+
+  }
+
+
+
+}

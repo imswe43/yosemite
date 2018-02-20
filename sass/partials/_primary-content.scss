@@ -1,0 +1,108 @@
+.mail-inbox-section{
+clear:left;
+width:334px;
+height:700px;
+overflow: auto;
+display: inline-block;
+.mail-inbox-layout{
+  position:relative;
+  width:334px;
+
+  .mail-single{
+    height:95px;
+    position: relative;
+      td:hover{
+        &::before{
+        position: absolute;
+        left: 0;
+        width: 3px;
+        height: 95px;
+        background-color: $blue;
+        content: '';
+        animation-duration: 3s;
+        animation-name: flow;
+        }
+        background-color: $white-opacity;
+      }
+      @keyframes flow {
+          from {
+              opacity: 0;
+              transform: translate(0, -100%);
+          }
+          to {
+              opacity: 1;
+              transform: none;
+          }
+      }
+    &:nth-child(2){
+
+      p:nth-child(2){
+        margin-bottom: 23px;
+        .fa-circle{
+          background-color: $mail-group-blue;
+          color:$mail-group-blue;
+        }
+      }
+    }
+    &:nth-child(3){
+      p:nth-child(1){
+        margin-top: 23px;
+      }
+      p:nth-child(2){
+        margin-bottom: 24px;
+        .fa-circle{
+          background-color: $mail-group-orange;
+          color:$mail-group-orange;
+        }
+      }
+    }
+    &:nth-child(4){
+      p:nth-child(1){
+        margin-top: 24px;
+      }
+    }
+    &:nth-child(8){
+      p:nth-child(2){
+        .fa-circle{
+          background-color: $mail-group-blue;
+          color:$mail-group-blue;
+        }
+      }
+    }
+    p{
+      margin:{
+        left:19px;
+        right: 16px;
+      }
+      time{
+        float:right;
+        font-size: 12px;
+      }
+    }
+    p:nth-child(1){
+      margin:{
+        top:20px;
+        bottom:9px;
+        left:19px;
+      }
+      font-size:15px;
+      color: $highlighted-gray;
+    }
+    p:nth-child(2){
+      margin-bottom: 26px;
+      color: $lighter-gray;
+      font-size:12px;
+
+      .fa-circle,.fa-reply,.fa-paperclip{
+      float: right;
+      margin-left:8px;
+      }
+      .fa-circle{
+        background-color: $mail-group-violet;
+        border-radius: 50%;
+        color:$mail-group-violet;
+      }
+    }
+  }
+}
+}
